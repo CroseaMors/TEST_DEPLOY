@@ -1,0 +1,27 @@
+.dashboard-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  gap: 2rem;
+
+  /* margin-top: 5%; */
+}
+
+.game-card-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.game-card-wrapper .game-card:nth-child(2) .card-h__banner {
+  height: 180%;
+}
+
+.game-card-wrapper a {
+  color: #000;
+}
+.card-archive {
+  margin-top: 30rem;
+}

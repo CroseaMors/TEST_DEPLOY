@@ -1,0 +1,231 @@
+.adventure-wrapper {
+  width: 100%;
+  height: 75vh;
+  position: relative;
+}
+.tower-container {
+  height: 100%;
+  width: 360px;
+  background: url("/public/assets/misc/25_tower.png");
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: absolute;
+  top: 0;
+  right: 2px;
+  padding-left: 60px;
+  padding-top: 20px;
+  padding-top: 20px;
+
+  overflow-y: auto;
+  flex-wrap: nowrap;
+}
+
+.border-progress {
+  outline: 2px solid #593796;
+}
+.btnBack {
+  /* For the Back button */
+  position: absolute;
+  margin-left: 1%;
+  margin-top: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: #fc5776;
+  color: white;
+  font-size: large;
+  border-top: 2px solid rgb(255, 255, 255);
+}
+.progress {
+  font-size: 40px;
+  font-family: "Lilita One";
+}
+
+.floor-description {
+  /* for grey backgroundest*/
+  /* border: 2px solid ; */
+  width: 40%;
+  height: 30rem;
+  margin-left: 30%;
+  background-color: #909090;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner-box {
+  /*for darker grey*/
+  width: 95%;
+  height: 28rem;
+  background-color: #666667;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.desc-container {
+  /*for purple background*/
+  width: 90%;
+  height: 25rem;
+  background: linear-gradient(-170deg, #b36dea, #461386);
+  border-radius: 20px;
+  box-shadow: inset 0px 10px 4px 2px #563474;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.txt-floor {
+  /*for the literal text of Floor 1*/
+  font-family: "lilita One";
+  font-size: 3rem;
+  color: white;
+  -webkit-text-stroke: 2px black;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.txt-rewards {
+  /* for the literal REWARDS word*/
+  font-family: "lilita one";
+  color: white;
+  font-size: 2rem;
+  margin-top: 1px;
+}
+.reward-item {
+  /*background purple for item1*/
+  width: 6.5rem;
+  height: 6rem;
+  border: 2px solid #541cbd;
+  background-color: #ffffff;
+  border-radius: 9px;
+  box-shadow: inset 0px 2px 5px 0px #1b1b1b;
+}
+.reward-item-container {
+  /*background metal for item1*/
+  width: 5.8rem;
+  height: 5.2rem;
+  background-color: #666565;
+  margin-left: 3.5%;
+  margin-top: 5%;
+  border-radius: 9px;
+  box-shadow: inset 0px 2px 5px 0px #1b1b1b;
+}
+.items-container {
+  /*for the items orientation and spacing*/
+  display: flex;
+  gap: 5rem;
+}
+.btn-enter {
+  width: 6.5rem;
+  height: 3rem;
+  font-size: larger;
+  margin-top: 2rem;
+}
+
+.progress {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.progress span {
+  font-size: 16pt;
+  width: auto;
+  outline: 1px solid #333;
+  background-color: #d9d9d9;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.progress .section-conquered {
+  background-color: #ffc658;
+  color: white;
+}
+.progress .section-ongoing {
+  /* background-color: #4cb8c4; */
+  background-color: #b76fff;
+}
+
+.progress span:first-child {
+  margin-left: 20px;
+}
+.time-input-container {
+  position: relative;
+}
+
+.time-input {
+  position: relative;
+  z-index: 1;
+}
+
+.upper-adventure {
+  height: 100%;
+  position: relative;
+}
+
+.lower-adventure {
+  border-top: 10px solid #662b9a;
+  padding-top: 30px;
+}
+
+.reward-box {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.floor-card:hover {
+  transform: scale(1.03); /* Slight increase in size on hover for feedback */
+}
+
+.floor-card {
+  min-height: 65px;
+
+  width: 150px;
+  border: 3px solid #593796;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lilita One";
+  color: #5e5e5e;
+  background-color: rgba(198, 198, 198, 0.5); /* Adjust the opacity here */
+  cursor: pointer;
+  font-size: 16pt;
+  transition: all 0.3s ease; /* Ensures smooth transitions */
+  position: relative;
+}
+
+.floor-card-active {
+  border: 8px solid #666667;
+  outline: 5px solid #909090;
+  width: 200px;
+  height: 80px;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: scale(1.1); /* Enlarge when active */
+  transition: transform 0.3s ease, border 0.3s ease; /* Smooth transition for transform and border */
+}
+
+.floor-card-locked::after {
+  content: "";
+  display: inline-block;
+  background: url("/public/assets/icon/ic_locked.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 15px;
+  left: 90%; /* Move it halfway across horizontally */
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,186 @@
+.nav-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.nav {
+  /* margin-bottom: 10%; */
+}
+
+.nav-bar {
+  width: 100%;
+  height: 5ch;
+  background-image: url("/public/assets/background/bg_nav.svg");
+  background-size: cover; /* cover to ensure full coverage */
+  background-position: center; /* centers the background image */
+  background-repeat: no-repeat;
+  position: relative;
+
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-bar a {
+  color: #fff;
+  font-family: "Lilita One";
+}
+
+.nav-bar a:last-child {
+  /* margin-right: 30px; */
+}
+
+.nav-bar {
+  height: 50px; /* default height */
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    height: 30px; /* smaller height for smaller screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-bar {
+    height: 60px; /* possibly larger for bigger screens */
+  }
+}
+
+.nav-bar__logo {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: -4;
+}
+
+.nav-bar__logo img {
+  width: 150px; /* Set a default width */
+}
+
+.nav-bar__logo img {
+  width: 10%;
+}
+
+/* CSS FOR BORGIR */
+
+.menu-icon {
+  width: 30px;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 20px; /* Adjust as needed */
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.menu-icon .bar {
+  /*editable for the menu icon*/
+  width: 100%;
+  height: 4px;
+  background-color: #ffcd6c;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.menu-icon.active .bar:nth-child(1) {
+  transform: translateY(110%) rotate(45deg);
+}
+
+.menu-icon.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.active .bar:nth-child(3) {
+  transform: translateY(-300%) rotate(-45deg);
+}
+
+.menu {
+  /*editable for the menu sidebar*/
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 23.8rem;
+  left: 0px; /* Adjust as needed */
+  height: 40rem;
+  width: 200px; /* Adjust as needed */
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transform: translateY(-50%) translateX(-100%); /*starting location*/
+  transition: transform 0.3s ease;
+
+  z-index: 10;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  z-index: 5;
+}
+.menu:hover {
+  color: #a893bf;
+}
+.menu.open {
+  /*for the animation of sidebar*/
+  padding-top: 0;
+  transform: translateY(-50%) translateX(0); /*last location*/
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  width: 100%;
+  /* outline: 1px solid red; */
+  padding: 20px 0;
+}
+
+.menu.open + .overlay {
+  display: block;
+}
+.menu a:hover {
+  background-color: #a893bf;
+  width: 100%;
+}
+/*CSS FOR PROFILE*/
+.profile-icon .circle {
+  /*profile itself*/
+  height: 35px;
+  width: 35px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 1.5rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+/* .profile{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 2rem;
+  left: 0px;
+  height: 0.2rem;
+  width: 200px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: translateY(-50%) translateX(1090%);
+  transition: transform 0.3s ease;
+}
+.profile.open{
+  transform: translateY(-50%) translateX(839%);
+  right: 0;
+}
+.profile-container{
+  overflow: hidden;
+} */

@@ -1,0 +1,312 @@
+.card-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 5em;
+}
+
+.card {
+  border: 1px solid #c4c4c4;
+  box-shadow: 0px 4px 20px rgba(191, 191, 191, 191);
+  border-radius: 20px;
+  font-family: "Lilita One";
+  background-color: #fff;
+}
+
+.card-setting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-setting--1f {
+  width: 430px;
+  height: 150px;
+}
+
+.card-setting--2f {
+  width: 450px;
+  height: 200px;
+}
+
+.card-setting__heading {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.card-setting__input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.card-setting__btn-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-game {
+  height: 350px;
+  width: 210px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-game:hover {
+  transform: scale(1.05);
+}
+
+.card-game__banner {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.card-game__banner img {
+  width: 100%;
+}
+
+.card__progress {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  background-color: #662b9a;
+  gap: 0.2rem;
+}
+
+.card__progress-value {
+  font-size: 30px;
+  color: #ffcd6c;
+  text-shadow: 0 0 10px #ffcd6c;
+}
+
+.card__progress-title {
+  color: #fff;
+}
+.card__progress-title,
+.card__progress-value,
+.card__title {
+  margin: 0;
+}
+
+.card__description {
+  width: 100%;
+  min-height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10px;
+  gap: 0.5rem;
+}
+
+.card-simulation {
+  height: 380px;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card-simulation__banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 40%;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #000;
+}
+
+.card-simulation__banner img {
+  height: 100%;
+  width: 100%;
+}
+
+.push-top {
+  margin-top: 10px;
+}
+
+.card-create {
+  border: 5px dashed #666;
+  color: #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-status {
+  width: 720px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-status__banner {
+  height: 90%;
+  width: 130px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: #000;
+  display: flex;
+}
+
+.card-status__info {
+  display: flex;
+}
+
+.card-status__banner img {
+  width: 100%;  
+}
+.status-progress {
+  border-radius: 10px;
+  padding-top: 0;
+  width: 160px;
+  height: 100%;
+}
+
+.status-progress .card__progress-title {
+  padding-top: 10px;
+}
+
+.card-status__info {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  margin-top: 10px;
+}
+
+.card-archive {
+  width: 750px;
+  height: 120px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.card-archive .card__progress {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.card-archive .card__title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.card__progress--container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+  align-items: center;
+  height: 100%;
+  gap: 2rem;
+}
+
+.card-archive .card__progress {
+  height: 100%;
+  width: 150px;
+  display: flex;
+  padding: 0;
+}
+
+.card-archive .card-status__description {
+  color: #000;
+}
+
+.card-archive__banner {
+  height: calc(90% - 5px);
+  border: none;
+  width: calc(100% - 10px);
+
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #884ac3, #a460dc, #552094);
+  border-top: 5px solid #7c49a6; /* Top border color */
+  outline: 3px solid #666667;
+
+  display: flex;
+}
+
+.card-archive__banner-container {
+  height: 90%;
+  min-width: 110px;
+  max-width: 110px;
+  border-radius: 5px;
+  background-color: #95a299;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.push-down {
+  margin-top: 0;
+}
+.card-archive__banner img {
+  width: 100%;
+}
+
+.card-item {
+  min-height: 300px;
+  max-height: 300px;
+
+  min-width: 220px;
+  max-width: 220px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.card-item::after {
+  content: "";
+  display: inline-block;
+  background: url("/public/assets/icon/ic_info.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 10%; /* Move it halfway down vertically */
+  left: 85%; /* Move it halfway across horizontally */
+  transform: translate(-50%, -50%);
+}
+
+.card-item__banner {
+  width: 65%;
+  height: 110px;
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-name {
+  color: #666666;
+  font-weight: 80;
+  margin-top: 0;
+  padding-top: 15px;
+}
+.card-item__banner img {
+  width: 100%;
+}

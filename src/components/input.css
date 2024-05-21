@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box; /* Ensures padding doesn't affect the overall width */
+}
+
+.input-container {
+  padding: 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: cadetblue;
+}
+
+.input {
+  outline: none;
+  padding: 5px 0px;
+
+  border: 1px solid #c1c1c1;
+  border-radius: 3px;
+  color: #000;
+}
+
+.input-box {
+  width: 380px;
+}
+
+.input-box-form {
+  width: 280px;
+}
+
+.input-box-form__s {
+  width: 130px;
+}
+.input::placeholder,
+.input-select {
+  color: #c1c1c1;
+}
+
+.input-line {
+  border: none;
+  font-family: "Lilita One";
+  background-color: transparent;
+}
+
+.input-line--dark {
+  border-bottom: 2px solid #666;
+  color: #666;
+}
+
+.input-line--dark::placeholder {
+  color: inherit;
+}
+
+.input-line--light {
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+
+.input-line--light::placeholder {
+  color: inherit;
+}
